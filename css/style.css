@@ -21,6 +21,8 @@ header {
 header h1 {
     font-size: 48px;
     margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 header p {
@@ -137,7 +139,7 @@ html {
     top: 0;
     width: 100%;
     background-color: rgba(15, 23, 42, 0.8);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     padding: 15px 0;
     border-bottom: 1px solid #1e293b;
     z-index: 1000;
@@ -149,7 +151,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0;
 }
 
 .logo {
@@ -167,12 +169,11 @@ html {
 
 .nav.links a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #ffffff;
     font-weight: 500;
     transition: 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #3b82f6;
-    transform: translateY(-2px);
 }
