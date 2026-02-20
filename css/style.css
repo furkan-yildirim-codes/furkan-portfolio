@@ -32,7 +32,7 @@ header p {
 
 section {
     max-width: 1000px;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 50px auto;
 }
 
 h2 {
@@ -139,7 +139,6 @@ html {
     top: 0;
     width: 100%;
     padding: 15px 0;
-    border-bottom: 1px solid #1e293b;
     z-index: 1000;
     padding: 20px 0;
 }
