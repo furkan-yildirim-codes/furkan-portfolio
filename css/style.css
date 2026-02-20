@@ -232,5 +232,9 @@ html {
         position: relative;
         top: 12px;
     }
+
+    .logo::after {
+        margin-top: -3px;
+    }
 }
 
