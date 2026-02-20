@@ -153,8 +153,10 @@ html {
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #3b82f6;
 }
 
 .nav-links {
@@ -165,10 +167,12 @@ html {
 
 .nav.links a {
     text-decoration: none;
-    color: #f1f5f9;
-    transition: 0.3s;
+    color: #cbd5e1;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #3b82f6;
+    transform: translateY(-2px);
 }
