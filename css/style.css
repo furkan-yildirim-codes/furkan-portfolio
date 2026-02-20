@@ -138,10 +138,10 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(15, 23, 42, 0.8);
     padding: 15px 0;
     border-bottom: 1px solid #1e293b;
     z-index: 1000;
+    padding: 20px 0;
 }
 
 .nav-container {
@@ -165,9 +165,9 @@ html {
     gap: 20px;
 }
 
-.nav.links a {
+.nav-links a {
     text-decoration: none;
-    color: white !important;
+    color: white;
     font-weight: 500;
 }
 
