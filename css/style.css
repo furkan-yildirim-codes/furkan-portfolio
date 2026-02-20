@@ -66,3 +66,21 @@ li {
 .btn:hover {
     background-color: #2563eb;
 }
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-card {
+    background-color: #1e293b;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    background-color: #334155;
+    transform: translateY(-5px);
+}
