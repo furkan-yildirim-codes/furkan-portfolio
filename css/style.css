@@ -84,3 +84,7 @@ li {
     background-color: #334155;
     transform: translateY(-5px);
 }
+
+html {
+    scroll-behavior: smooth;
+}
