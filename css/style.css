@@ -10,7 +10,6 @@ body {
     color: #f1f5f9;
     line-height: 1.6;
     padding: 40px;
-    padding-top: 80px;
 }
 
 header {
@@ -135,10 +134,9 @@ html {
 }
 
 .navbar {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
-    padding: 15px 0;
     z-index: 1000;
     padding: 20px 0;
 }
@@ -152,7 +150,7 @@ html {
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 700;
     letter-spacing: 2px;
     color: #3b82f6;
