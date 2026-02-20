@@ -10,6 +10,7 @@ body {
     color: #f1f5f9;
     line-height: 1.6;
     padding: 40px;
+    padding-top: 80px;
 }
 
 header {
@@ -129,4 +130,43 @@ html {
 
 .project-link:hover {
     text-decoration: underline;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: #0f172a;
+    padding: 15px 0;
+    border-bottom: 1px solid #1e293b;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav.links a {
+    text-decoration: none;
+    color: #f1f5f9;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3b82f6;
 }
