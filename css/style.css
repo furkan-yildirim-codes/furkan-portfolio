@@ -176,6 +176,13 @@ html {
     color: #3b82f6;
 }
 
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
 @media (max-width: 768px) {
 
     .hamburger {
@@ -216,9 +223,3 @@ html {
     }
 }
 
-.hamburger {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
-}
