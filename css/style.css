@@ -231,10 +231,7 @@ html {
     .logo {
         position: relative;
         top: 12px;
-    }
-
-    .logo::after {
-        margin-top: -3px;
+        padding-bottom: 2px;
     }
 }
 
