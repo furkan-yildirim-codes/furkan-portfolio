@@ -227,5 +227,10 @@ html {
     .project-card {
         width: 100%;
     }
+
+    .logo {
+        position: relative;
+        top: 5px;
+    }
 }
 
