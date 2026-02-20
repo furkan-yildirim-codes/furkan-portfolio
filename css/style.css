@@ -88,3 +88,21 @@ li {
 html {
     scroll-behavior: smooth;
 }
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap:20 px;
+}
+
+.project-card {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: #334155;
+}
