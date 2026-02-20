@@ -182,6 +182,9 @@ html {
     cursor: pointer;
     color: white;
     line-height: 1;
+    position: relative;
+    top: -3px;
+    margin-right: 15px;
 }
 
 @media (max-width: 768px) {
