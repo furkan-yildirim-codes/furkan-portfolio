@@ -175,3 +175,34 @@ html {
 .nav-links a:hover {
     color: #3b82f6;
 }
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .hero p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
