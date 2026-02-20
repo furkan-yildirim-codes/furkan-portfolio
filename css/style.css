@@ -178,14 +178,8 @@ html {
 
 @media (max-width: 768px) {
 
-    .nav-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .nav-links {
-        flex-direction: column;
-        gap: 10px;
+        display: none;
     }
 
     .hero h1 {
