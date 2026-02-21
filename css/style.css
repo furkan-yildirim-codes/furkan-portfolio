@@ -204,7 +204,7 @@ html {
     }
 
     .nav-links {
-        display: none;
+        display: flex;
         flex-direction: column;
         width: 90%;
         background-color: #0f172a;
@@ -214,10 +214,17 @@ html {
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
     }
 
     .nav-links.active {
-        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
     }
 
     .hero h1 {
