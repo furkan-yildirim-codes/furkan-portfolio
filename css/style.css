@@ -189,23 +189,25 @@ html {
 .hamburger {
     display: none;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
     width: 28px;
-    height: 20px;
+    height: 28px;
     cursor: pointer;
 }
 
 .hamburger span {
     display: block;
     height: 3px;
-    width: 100%;
+    width: 24px;
     background-color: white;
     border-radius: 3px;
     transition: all 0.3s ease;
 }
 
 .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px);
+    transform: translateY(9px) rotate(45deg);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -213,7 +215,7 @@ html {
 }
 
 .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(-8px);
+    transform: translateY(-9px) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
@@ -231,7 +233,7 @@ html {
         gap: 40px;
         width: 100%;
         height: 100vh;
-        background: #0f172a;
+        background: linear-gradient(to bottom, #0f172a, #0b1220);
         position: fixed;
         top: 0;
         right: 0;
@@ -246,6 +248,24 @@ html {
 
     .nav-links a {
         font-size: 22px;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        width: 0%;
+        height: 2px;
+        background: #3b82f6;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    .nav-links a::hover::after {
+        width: 50%;
     }
 
     .hero h1 {
