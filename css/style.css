@@ -316,13 +316,16 @@ html {
 }
 
 .project-image {
-    border-radius: 12px;
+    position: relative;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
 .project-image img {
     width: 100%;
     height: 230px;
     object-fit: cover;
+}
+
+.project-content {
+    padding: 20px;
 }
