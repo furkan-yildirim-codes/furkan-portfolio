@@ -304,3 +304,13 @@ html {
     transform: translateY(0);
 }
 
+.reveal-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.reveal-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}

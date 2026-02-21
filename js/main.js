@@ -32,3 +32,22 @@ const observer = new IntersectionObserver((entries) => {
 reveals.forEach(reveal => {
     observer.observe(reveal);
 });
+
+const revealItems = document.querySelectorAll(".reveal-item");
+const itemObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            const items = entry.target.querySelectorAll(".reveal-item");
+            items.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add("active");
+                }, index * 150);
+            });
+        }
+    });
+}, {
+    threshold: 0.2
+});
+document.querySelectorAll("section").forEach(section => {
+    itemObserver.observe(section);
+});
