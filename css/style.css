@@ -343,6 +343,7 @@ html {
     display: flex;
     gap: 20px;
     top: -2px;
+    line-height: 1;
 }
 
 .project-links a {
@@ -372,12 +373,13 @@ html {
 .project-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 12px;
 }
 
 .project-header h3 {
     margin:0;
+    line-height: 1.2;
 }
 
 .terminal-bar {
