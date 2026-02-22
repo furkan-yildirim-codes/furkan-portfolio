@@ -270,6 +270,8 @@ html {
 
     .project-card {
         width: 100%;
+        padding: 20px;
+        text-align: center;
     }
 
     .logo {
@@ -280,12 +282,21 @@ html {
 
     .project-header {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
+        align-items: center;
+        gap: 10px;
     }
 
     .project-links {
         gap: 15px;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .project-tech {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
     }
 
     .project-image {
@@ -293,7 +304,9 @@ html {
     }
 
     .project-image img {
-        max-height: 250px;
+        max-height: 220px;
+        width: 100%;
+        object-fit: cover;
     }
 
     .project-links a {
