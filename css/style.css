@@ -281,14 +281,17 @@ html {
     }
 
     .project-header {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        text-align: center;
+        width: 100%;
     }
 
     .project-links {
-        gap: 12px;
+        display: flex;
         justify-content: center;
+        width: 100%;
     }
 
     .project-tech {
