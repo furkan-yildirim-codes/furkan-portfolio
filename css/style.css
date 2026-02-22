@@ -277,6 +277,31 @@ html {
         top: 12px;
         padding-bottom: 2px;
     }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .project-links {
+        gap: 15px;
+    }
+
+    .project-image {
+        padding: 15px;
+    }
+
+    .project-image img {
+        max-height: 250px;
+    }
+
+    .project-links a {
+        padding: 6px 12px;
+        border: 1px solid #3b82f6;
+        border-radius: 6px;
+    }
+
 }
 
 .reveal {
