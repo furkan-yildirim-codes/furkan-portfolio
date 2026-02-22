@@ -334,8 +334,21 @@ html {
     display: block;
 }
 
-.project-content {
-    padding: 20px;
+.project-card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 22px;
+    border: 1px solid rgba(59,130,246,0.2);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.project-card + .project-card {
+    margin-top: 30px;
 }
 
 .project-links {
