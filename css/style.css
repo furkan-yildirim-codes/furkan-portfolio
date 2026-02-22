@@ -356,6 +356,7 @@ html {
     position: relative;
     display: flex;
     gap: 20px;
+    top: -2px;
 }
 
 .project-links a {
@@ -387,6 +388,10 @@ html {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
+}
+
+.project-header h3 {
+    margin:0;
 }
 
 .terminal-bar {
