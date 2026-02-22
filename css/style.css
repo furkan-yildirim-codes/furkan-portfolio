@@ -354,7 +354,7 @@ html {
 .project-links {
     margin-top: 18px;
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 
 .project-links a {
@@ -379,6 +379,13 @@ html {
 
 .project-links a:hover::after {
     width: 100%;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .terminal-bar {
