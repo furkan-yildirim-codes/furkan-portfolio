@@ -254,6 +254,10 @@ html {
         width: 50%;
     }
 
+    .nav-container {
+        padding: 0 20px;   /* sağ-sol boşluk */
+    }
+
     .hero h1 {
         font-size: 28px;
         text-align: center;
