@@ -287,9 +287,8 @@ html {
     }
 
     .project-links {
-        gap: 15px;
+        gap: 12px;
         justify-content: center;
-        margin-top: 5px;
     }
 
     .project-tech {
@@ -310,7 +309,8 @@ html {
     }
 
     .project-links a {
-        padding: 6px 12px;
+        font-size: 13px;
+        padding: 5px 12px;
         border: 1px solid #3b82f6;
         border-radius: 6px;
     }
