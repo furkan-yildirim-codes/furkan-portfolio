@@ -511,6 +511,11 @@ body.light-mode {
     cursor: pointer;
     font-size: 24px;
     margin-left: 20px;
+    transition: transform 0.4s ease;
+}
+
+.theme-toggle.rotate {
+    transform: rotate(360deg);
 }
 
 @media (hover: hover) and (pointer: fine) {

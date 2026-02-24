@@ -73,7 +73,14 @@ if (savedTheme === "light") {
 
 themeToggle.addEventListener("click", () => {
     
+    themeToggle.classList.add("rotate");
+
+    setTimeout(() => {
+        themeToggle.classList.remove("rotate");
+    }, 400);
+
     document.body.classList.toggle("light-mode");
+    
     if(document.body.classList.contains("light-mode")) {
         themeToggle.textContent = "🌙";
         localStorage.setItem("theme", "light");
