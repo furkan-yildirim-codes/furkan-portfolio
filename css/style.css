@@ -532,6 +532,6 @@ body.light-mode {
 @media (min-width: 769px) {
     .theme-toggle {
         position: relative;
-        top: -2px;
+        top: -3px;
     }
 }
