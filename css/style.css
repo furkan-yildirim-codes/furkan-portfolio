@@ -365,6 +365,8 @@ body.light-mode .project-tech span {
 
     .theme-toggle {
         margin-right: 15px;
+        margin-left: auto;
+        order: 2;
         font-size: 22px;
     }
 
