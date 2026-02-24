@@ -18,6 +18,14 @@ document.addEventListener("click", (e) => {
     }
 })
 
+const navItems = document.querySelectorAll(".nav-links a");
+navItems.forEach(item => {
+    item.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        hamburger.classList.remove("active");
+    });
+});
+
 const reveals = document.querySelectorAll(".reveal");
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
