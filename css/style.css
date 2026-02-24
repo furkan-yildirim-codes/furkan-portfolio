@@ -513,14 +513,14 @@ body.light-mode {
     margin-left: 20px;
 }
 
-.theme-toggle:hover {
-    transform: translateY(-2px) scale(1.15);
-}
-
 @media (hover: hover) and (pointer: fine) {
     .theme-toggle:hover {
         transform: scale(1.15);
     }
+}
+
+.theme-toggle:focus {
+    outline: none;
 }
 
 @media (hover: none) {
