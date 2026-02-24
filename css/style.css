@@ -178,7 +178,17 @@ body.light-mode .project-tech span {
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--accent-color);
-    padding-bottom: -4px;
+    display: inline-block;
+    position: relative;
+}
+
+.logo::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: var(--accent-color);
+    margin: 6px auto 0 auto;
 }
 
 .nav-links {
