@@ -502,7 +502,7 @@ body.light-mode {
 
 .theme-toggle {
     cursor: pointer;
-    font-size: 24px;
+    font-size: 22px;
     margin-left: 15px;
     display: flex;
     align-items: center;
