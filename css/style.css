@@ -503,13 +503,12 @@ body.light-mode {
 .theme-toggle {
     cursor: pointer;
     font-size: 22px;
-    margin-left: 15px;
+    margin-left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
     line-height: 1;
-    transform: translateY(-2px);
-    transition: transform 0.3s ease;
 }
 
 .theme-toggle:hover {
