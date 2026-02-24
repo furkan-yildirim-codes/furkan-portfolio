@@ -4,10 +4,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #0f172a;
+    --card-color: #1e293b;
+    --text-color: #f1f5f9;
+    --secondary-text: #94a3b8;
+    --accent-color: #3b82f6;
+}
+
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #0f172a;
-    color: #f1f5f9;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
     padding-top: 80px;
 }
@@ -26,7 +34,7 @@ header h1 {
 
 header p {
     font-size: 18px;
-    color: #94a3b8;
+    color: var(--secondary-text);
 }
 
 section {
@@ -61,7 +69,7 @@ li {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 24px;
-    background-color: #3b82f6;
+    background-color: var(--accent-color);
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -152,7 +160,7 @@ html {
     font-size: 32px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #3b82f6;
+    color: var(--accent-color);
     padding-bottom: -4px;
 }
 
@@ -170,7 +178,7 @@ html {
 }
 
 .nav-links a:hover {
-    color: #3b82f6;
+    color: var(--accent-color);
 }
 
 .hamburger {
@@ -246,12 +254,12 @@ html {
         left: 50%;
         width: 0%;
         height: 2px;
-        background: #3b82f6;
+        background: var(--accent-color);
         transition: all 0.3s ease;
         transform: translateX(-50%);
     }
 
-    .nav-links a::hover::after {
+    .nav-links a:hover::after {
         width: 50%;
     }
 
@@ -320,7 +328,7 @@ html {
     .project-links a {
         font-size: 13px;
         padding: 5px 12px;
-        border: 1px solid #3b82f6;
+        border: 1px solid var(--accent-color);
         border-radius: 6px;
     }
 
@@ -368,7 +376,7 @@ html {
 }
 
 .project-card {
-    background: #1e293b;
+    background: var(--card-color);
     padding: 25px;
     border-radius: 22px;
     border: 1px solid rgba(59,130,246,0.2);
@@ -391,7 +399,7 @@ html {
 }
 
 .project-links a {
-    color: #3b82f6;
+    color: var(--accent-color);
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -406,7 +414,7 @@ html {
     bottom: 0;
     width: 0;
     height: 2px;
-    background: #3b82f6;
+    background: var(--accent-color);
     transition: width 0.3s ease;
 }
 
@@ -452,4 +460,23 @@ html {
 
 .terminal-bar span:nth-child(3) {
     background: #27c93f;
+}
+
+body.light-mode {
+    --bg-color: #f8fafc;
+    --card-color: #ffffff;
+    --text-color: #0f172a;
+    --secondary-text: #475569;
+    --accent-color: #2563eb;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
 }

@@ -59,3 +59,21 @@ const itemObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll("section").forEach(section => {
     itemObserver.observe(section);
 });
+
+const themeToggle = document.getElementById("themeToggle");
+
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+    if(document.body.classList.contains("light-mode")) {
+        themeToggle.textContent = "☀️";
+        localStorage.setItem("theme", "light");
+    } else {
+        themeToggle.textContent = "🌙";
+        localStorage.setItem("theme", "dark");
+    }
+});
+
+if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light-mode");
+    themeToggle.textContent = "☀️";
+}
