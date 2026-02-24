@@ -61,8 +61,18 @@ document.querySelectorAll("section").forEach(section => {
 });
 
 const themeToggle = document.getElementById("themeToggle");
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
+    document.body.classList.add("light-mode");
+    themeToggle.textContent = "🌙";
+} else {
+    document.body.classList.remove("light-mode");
+    themeToggle.textContent = "☀️";
+}
 
 themeToggle.addEventListener("click", () => {
+    
     document.body.classList.toggle("light-mode");
     if(document.body.classList.contains("light-mode")) {
         themeToggle.textContent = "🌙";
@@ -72,8 +82,3 @@ themeToggle.addEventListener("click", () => {
         localStorage.setItem("theme", "dark");
     }
 });
-
-if (localStorage.getItem("theme") === "light") {
-    document.body.classList.add("light-mode");
-    themeToggle.textContent = "☀️";
-}
