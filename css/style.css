@@ -198,6 +198,7 @@ body.light-mode .project-tech span {
     list-style: none;
     display: flex;
     gap: 25px;
+    align-items: center;
 }
 
 .nav-links a {
@@ -294,7 +295,7 @@ body.light-mode .project-tech span {
     }
 
     .nav-container {
-        padding: 0 20px;   /* sağ-sol boşluk */
+        padding: 0 20px;   
     }
 
     .hero h1 {
@@ -503,10 +504,10 @@ body.light-mode {
 .theme-toggle {
     cursor: pointer;
     font-size: 24px;
-    margin-left: 20px;
     line-height: 1;
-    position: relative;
-    top: -2px;
+    display: inline-flex;
+    align-items: center;
+    transform: translateY(-3px);
 }
 
 .theme-toggle:hover {
