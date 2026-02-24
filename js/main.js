@@ -82,3 +82,7 @@ themeToggle.addEventListener("click", () => {
         localStorage.setItem("theme", "dark");
     }
 });
+
+themeToggle.addEventListener("click", () => {
+    themeToggle.blur();
+});
