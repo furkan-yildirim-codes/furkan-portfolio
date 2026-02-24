@@ -512,7 +512,6 @@ body.light-mode {
     cursor: pointer;
     font-size: 24px;
     margin-left: 20px;
-    transform: translateY(-3px);
 }
 
 .theme-toggle:hover {
