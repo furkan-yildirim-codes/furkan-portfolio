@@ -117,10 +117,22 @@ html {
 
 .project-tech span {
     background-color: var(--card-color);
+    display: inline-block;
     padding: 5px 10px;
     border-radius: 6px;
     margin-right: 8px;
     font-size: 14px;
+    border: 1px solid rgba(59,130,246,0.2);
+}
+
+.project-tech span:hover {
+    background-color: var(--accent-color);
+    color: white;
+    cursor: default;
+}
+
+body.light-mode .project-tech span {
+    background-color: #e2e8f0;
 }
 
 .project-link {
