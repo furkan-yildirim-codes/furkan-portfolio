@@ -249,7 +249,6 @@ body.light-mode .project-tech span {
     .hamburger {
         display: flex;
         z-index: 1000;
-        order: 3;
     }
 
     .nav-links {
@@ -365,12 +364,11 @@ body.light-mode .project-tech span {
     }
 
     .theme-toggle {
-        margin-right: 15px;
-        margin-left: auto;
-        order: 2;
+        position: absolute;
+        right: 55px;   
+        top: 28px;     
         font-size: 22px;
     }
-
 }
 
 .reveal {
