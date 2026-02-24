@@ -507,7 +507,7 @@ body.light-mode {
     line-height: 1;
     display: inline-flex;
     align-items: center;
-    transform: translateY(-3px);
+    height: 80px;
 }
 
 .theme-toggle:hover {
