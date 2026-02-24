@@ -499,3 +499,9 @@ body.light-mode {
 .theme-toggle:hover {
     transform: scale(1.1);
 }
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
