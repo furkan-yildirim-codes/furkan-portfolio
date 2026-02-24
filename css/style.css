@@ -363,6 +363,13 @@ body.light-mode .project-tech span {
         border-radius: 6px;
     }
 
+    .theme-toggle {
+        position: absolute;
+        right: 60px;   
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
 }
 
 .reveal {
