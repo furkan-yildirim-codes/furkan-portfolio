@@ -369,6 +369,10 @@ body.light-mode .project-tech span {
         top: 28px;     
         font-size: 22px;
     }
+
+    .theme-toggle:hover {
+        transform: none;
+    }
 }
 
 .reveal {
@@ -515,10 +519,4 @@ body.light-mode {
 
 .theme-toggle:hover {
     transform: translateY(-2px) scale(1.15);
-}
-
-@media (hover: hover) {
-    .theme-toggle:hover {
-        transform: translateY(-2px) scale(1.15);
-    }
 }
