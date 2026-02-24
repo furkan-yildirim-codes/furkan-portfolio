@@ -502,13 +502,10 @@ body.light-mode {
 
 .theme-toggle {
     cursor: pointer;
-    font-size: 22px;
-    margin-left: 20px;
+    font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    line-height: 1;
 }
 
 .theme-toggle:hover {
@@ -518,5 +515,5 @@ body.light-mode {
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
 }
