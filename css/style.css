@@ -489,8 +489,10 @@ body.light-mode {
 
 .theme-toggle {
     cursor: pointer;
-    font-size: 20px;
-    margin-left: 20px;
+    font-size: 18px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
     transition: transform 0.3s ease;
 }
 
