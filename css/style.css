@@ -367,7 +367,7 @@ body.light-mode .project-tech span {
         position: absolute;
         right: 60px;   
         top: 50%;
-        transform: translateY(-50%);
+        font-size: 22px;
     }
 
 }
