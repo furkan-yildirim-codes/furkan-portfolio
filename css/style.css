@@ -116,13 +116,14 @@ html {
 }
 
 .project-tech span {
-    background-color: var(--card-color);
+    background-color: rgba(37, 99, 235, 0.08);
+    color: var(--text-color);
     display: inline-block;
     padding: 5px 10px;
     border-radius: 6px;
     margin-right: 8px;
     font-size: 14px;
-    border: 1px solid rgba(59,130,246,0.2);
+    border: 1px solid rgba(37, 99, 235,0.15);
 }
 
 .project-tech span:hover {
@@ -132,7 +133,8 @@ html {
 }
 
 body.light-mode .project-tech span {
-    background-color: #e2e8f0;
+    background-color: rgba(15, 23, 42, 0.05);
+    border: none;
 }
 
 .project-link {
