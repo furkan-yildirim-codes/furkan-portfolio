@@ -504,10 +504,8 @@ body.light-mode {
 .theme-toggle {
     cursor: pointer;
     font-size: 24px;
-    line-height: 1;
-    display: inline-flex;
-    align-items: center;
-    height: 80px;
+    margin-left: 20px;
+    vertical-align: middle;
 }
 
 .theme-toggle:hover {
