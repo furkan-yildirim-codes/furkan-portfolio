@@ -93,13 +93,3 @@ themeToggle.addEventListener("click", () => {
 themeToggle.addEventListener("click", () => {
     themeToggle.blur();
 });
-
-document.querySelectorAll(".project-links a").forEach(link => {
-    link.addEventListener("click", function() {
-        this.blur();
-    });
-
-    link.addEventListener("touchend", function() {
-        this.blur();
-    });
-});
