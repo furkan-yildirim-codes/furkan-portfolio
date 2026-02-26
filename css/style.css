@@ -535,13 +535,6 @@ body.light-mode {
     .theme-toggle:focus {
         transform: none;
     }
-
-    .project-links a:focus,
-    .project-links a:active {
-        outline: none;
-        transform: none;
-        box-shadow: none;
-    }
 }
 
 @media (min-width: 769px) {
