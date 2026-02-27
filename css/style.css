@@ -661,7 +661,7 @@ body.light-mode .hero::before {
     rgba(255, 200, 120, 0.1) 55%,
     transparent 75%
   );
-  filter: blur(55px);
+  filter: blur(60px);
   z-index: -1;
 }
 
@@ -682,14 +682,16 @@ body.light-mode .skills-card {
 body.light-mode::after {
   content: "";
   position: fixed;
-  inset: 0;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 0, 150, 0.08),
-    rgba(255, 200, 0, 0.08),
-    rgba(0, 200, 255, 0.08)
-  );
-  mix-blend-mode: overlay;
+  width: 600px;
+  height: 600px;
+  top: -200px;
+  right: -200px;
+  background: radial-gradient(circle,
+      rgba(255, 0, 150, 0.15),
+      rgba(255, 180, 0, 0.15),
+      rgba(0, 200, 255, 0.15),
+      transparent 70%);
+  filter: blur(120px);
   pointer-events: none;
-  z-index: -3;
+  z-index: -2;
 }
