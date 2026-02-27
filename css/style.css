@@ -562,7 +562,8 @@ body.light-mode {
 
   background-color: var(--accent-color);
   color: white;
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: bold;
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 
   display: flex;
