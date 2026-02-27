@@ -663,3 +663,25 @@ body.light-mode .hero::before {
   filter: blur(50px);
   z-index: -1;
 }
+
+body.light-mode .project-card,
+body.light-mode .skills-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+body.light-mode h2 {
+  border-bottom: 2px solid rgba(59,130,246,0.3);
+}
+
+body.light-mode .navbar {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+body.light-mode .hero h1 {
+  text-shadow: 0 5px 25px rgba(59,130,246,0.15);
+}

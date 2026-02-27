@@ -157,10 +157,10 @@ function updateParticlesMode() {
     tsParticles.load("bg-animation", {
       fpsLimit: 60,
       particles: {
-        number: { value: 60 },
+        number: { value: 40 },
         color: { value: "#3b82f6" },
         shape: { type: "circle" },
-        opacity: { value: 0.4 },
+        opacity: { value: 0.3 },
         size: { value: 4, random: true },
         move: {
           enable: true,
