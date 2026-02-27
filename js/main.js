@@ -113,13 +113,13 @@ scrollTopBtn.addEventListener("click", () => {
 
 tsParticles.load("bg-animation", {
   particles: {
-    number: { value: 40 },
-    size: { value: 2 },
+    number: { value: 35 },
+    size: { value: 2.5 },
     move: {
-      speed: 0.8
+      speed: 1.8
     },
-    opacity: { value: 0.3 },
-    color: { value: "#3b82f6" }
+    opacity: { value: 0.4 },
+    color: { value: "#ffffff" }
   },
   background: {
     color: "transparent"
