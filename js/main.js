@@ -88,6 +88,8 @@ themeToggle.addEventListener("click", () => {
         themeToggle.textContent = "☀️";
         localStorage.setItem("theme", "dark");
     }
+
+    updateParticlesVisibility();
 });
 
 themeToggle.addEventListener("click", () => {
@@ -111,7 +113,7 @@ scrollTopBtn.addEventListener("click", () => {
   });
 });
 
-tsParticles.load("bg-animation", {
+const particlesInstance = tsParticles.load("bg-animation", {
   fpsLimit: 60,
   particles: {
     number: {
@@ -147,3 +149,15 @@ tsParticles.load("bg-animation", {
   },
   detectRetina: true
 });
+
+const bgContainer = document.getElementById("bg-animation");
+
+function updateParticlesVisibility() {
+  if (document.body.classList.contains("light-mode")) {
+    bgContainer.style.display = "none";
+  } else {
+    bgContainer.style.display = "block";
+  }
+}
+
+updateParticlesVisibility();

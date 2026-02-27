@@ -611,8 +611,8 @@ body.light-mode::before {
   position: fixed;
   inset: 0;
   background: radial-gradient(
-    circle at 50% 20%,
-    rgba(59,130,246,0.08),
+    circle at 50% 0%,
+    rgba(59,130,246,0.05),
     transparent 70%
   );
   z-index: -2;
