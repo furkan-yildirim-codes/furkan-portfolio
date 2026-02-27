@@ -648,17 +648,18 @@ body.light-mode .hero {
 body.light-mode .hero::before {
   content: "";
   position: absolute;
-  width: 600px;
-  height: 600px;
-  top: -200px;
+  width: 500px;
+  height: 500px;
+  top: -180px;
   left: 50%;
   transform: translateX(-50%);
   background: radial-gradient(
     circle,
-    rgba(255, 200, 100, 0.35) 0%,
-    rgba(255, 200, 100, 0.15) 40%,
-    transparent 70%
+    rgba(255, 190, 80, 0.6) 0%,
+    rgba(255, 190, 80, 0.35) 35%,
+    rgba(255, 190, 80, 0.15) 55%,
+    transparent 75%
   );
-  filter: blur(80px);
+  filter: blur(50px);
   z-index: -1;
 }
