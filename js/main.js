@@ -157,14 +157,14 @@ function updateParticlesMode() {
     tsParticles.load("bg-animation", {
       fpsLimit: 60,
       particles: {
-        number: { value: 35 },
-        color: { value: "#93c5fd" }, // açık mavi
+        number: { value: 60 },
+        color: { value: "#3b82f6" }, // açık mavi
         shape: { type: "circle" },
-        opacity: { value: 0.25 },
+        opacity: { value: 0.4 },
         size: { value: 4, random: true },
         move: {
           enable: true,
-          speed: 0.6,
+          speed: 1.2,
           direction: "top",
           random: true,
           straight: false,
