@@ -112,16 +112,38 @@ scrollTopBtn.addEventListener("click", () => {
 });
 
 tsParticles.load("bg-animation", {
+  fpsLimit: 60,
   particles: {
-    number: { value: 35 },
-    size: { value: 2.5 },
-    move: {
-      speed: 1.8
+    number: {
+      value: 50,
+      density: {
+        enable: true,
+        area: 800
+      }
     },
-    opacity: { value: 0.4 },
-    color: { value: "#ffffff" }
+    color: {
+      value: "#3b82f6"
+    },
+    shape: {
+      type: "circle"
+    },
+    opacity: {
+      value: 0.5
+    },
+    size: {
+      value: 3,
+      random: true
+    },
+    move: {
+      enable: true,
+      speed: 2,
+      direction: "none",
+      random: true,
+      straight: false,
+      outModes: {
+        default: "out"
+      }
+    }
   },
-  background: {
-    color: "transparent"
-  }
+  detectRetina: true
 });
