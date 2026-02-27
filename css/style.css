@@ -370,9 +370,10 @@ body.light-mode .project-tech span {
         font-size: 22px;
     }
 
-    .scrollTopBtn {
-        right: 20px;
-        bottom: 20px;
+    .scroll-top-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
     }
 }
 
@@ -553,15 +554,16 @@ body.light-mode {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
 
   background-color: var(--accent-color);
   color: white;
-  font-size: 18px;
+  font-size: 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 
   display: flex;
   align-items: center;
@@ -582,5 +584,5 @@ body.light-mode {
 }
 
 .scroll-top-btn:hover {
-  transform: translateY(-3px) scale(1.05);
+  transform: translateY(-4px) scale(1.08);
 }
