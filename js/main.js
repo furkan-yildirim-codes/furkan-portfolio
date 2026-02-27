@@ -158,13 +158,13 @@ function updateParticlesMode() {
       fpsLimit: 60,
       particles: {
         number: { value: 60 },
-        color: { value: "#3b82f6" }, // açık mavi
+        color: { value: "#3b82f6" },
         shape: { type: "circle" },
         opacity: { value: 0.4 },
         size: { value: 4, random: true },
         move: {
           enable: true,
-          speed: 1.2,
+          speed: 0.8,
           direction: "top",
           random: true,
           straight: false,
@@ -179,7 +179,7 @@ function updateParticlesMode() {
       fpsLimit: 60,
       particles: {
         number: { value: 50 },
-        color: { value: "#3b82f6" }, // dark config
+        color: { value: "#3b82f6" },
         shape: { type: "circle" },
         opacity: { value: 0.5 },
         size: { value: 3, random: true },
