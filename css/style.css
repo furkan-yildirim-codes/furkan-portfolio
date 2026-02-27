@@ -631,3 +631,11 @@ body.light-mode::before {
   pointer-events: none;
   transition: opacity 0.4s ease;
 }
+
+body.light-mode {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #e0f2fe 100%
+  );
+}

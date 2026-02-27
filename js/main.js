@@ -89,7 +89,7 @@ themeToggle.addEventListener("click", () => {
         localStorage.setItem("theme", "dark");
     }
 
-    updateParticlesVisibility();
+    updateParticlesMode();
 });
 
 themeToggle.addEventListener("click", () => {
@@ -150,14 +150,51 @@ const particlesInstance = tsParticles.load("bg-animation", {
   detectRetina: true
 });
 
-const bgContainer = document.getElementById("bg-animation");
+function updateParticlesMode() {
 
-function updateParticlesVisibility() {
   if (document.body.classList.contains("light-mode")) {
-    bgContainer.style.opacity = "0";
+
+    tsParticles.load("bg-animation", {
+      fpsLimit: 60,
+      particles: {
+        number: { value: 35 },
+        color: { value: "#93c5fd" }, // açık mavi
+        shape: { type: "circle" },
+        opacity: { value: 0.25 },
+        size: { value: 4, random: true },
+        move: {
+          enable: true,
+          speed: 0.6,
+          direction: "top",
+          random: true,
+          straight: false,
+          outModes: { default: "out" }
+        }
+      }
+    });
+
   } else {
-    bgContainer.style.opacity = "1";
+
+    tsParticles.load("bg-animation", {
+      fpsLimit: 60,
+      particles: {
+        number: { value: 50 },
+        color: { value: "#3b82f6" }, // dark config
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3, random: true },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          random: true,
+          straight: false,
+          outModes: { default: "out" }
+        }
+      }
+    });
+
   }
 }
 
-updateParticlesVisibility();
+updateParticlesMode();
