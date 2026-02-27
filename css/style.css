@@ -661,7 +661,7 @@ body.light-mode .hero::before {
     rgba(255, 200, 120, 0.1) 55%,
     transparent 75%
   );
-  filter: blur(40px);
+  filter: blur(55px);
   z-index: -1;
 }
 
@@ -685,9 +685,9 @@ body.light-mode::after {
   inset: 0;
   background: linear-gradient(
     120deg,
-    rgba(255, 0, 150, 0.05),
-    rgba(255, 200, 0, 0.05),
-    rgba(0, 200, 255, 0.05)
+    rgba(255, 0, 150, 0.08),
+    rgba(255, 200, 0, 0.08),
+    rgba(0, 200, 255, 0.08)
   );
   mix-blend-mode: overlay;
   pointer-events: none;
