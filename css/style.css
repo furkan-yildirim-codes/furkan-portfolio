@@ -549,7 +549,7 @@ body.light-mode {
     }
 }
 
-.scrollTopBtn {
+.scroll-top-btn {
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -575,12 +575,12 @@ body.light-mode {
   z-index: 999;
 }
 
-.scrollTopBtn.show {
+.scroll-top-btn.show {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-.scrollTopBtn:hover {
+.scroll-top-btn:hover {
   transform: translateY(-3px) scale(1.05);
 }
