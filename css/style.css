@@ -656,12 +656,12 @@ body.light-mode .hero::before {
   transform: translateX(-50%);
   background: radial-gradient(
     circle,
-    rgba(255, 200, 120, 0.6) 0%,
-    rgba(255, 200, 120, 0.3) 40%,
-    rgba(255, 200, 120, 0.1) 60%,
-    transparent 80%
+    rgba(255, 200, 120, 0.45) 0%,
+    rgba(255, 200, 120, 0.25) 35%,
+    rgba(255, 200, 120, 0.1) 55%,
+    transparent 75%
   );
-  filter: blur(45px);
+  filter: blur(40px);
   z-index: -1;
 }
 
@@ -677,4 +677,19 @@ body.light-mode .project-card,
 body.light-mode .skills-card {
   background: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(255, 200, 120, 0.2);
+}
+
+body.light-mode::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 0, 150, 0.05),
+    rgba(255, 200, 0, 0.05),
+    rgba(0, 200, 255, 0.05)
+  );
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: -3;
 }
