@@ -695,3 +695,8 @@ body.light-mode::after {
   pointer-events: none;
   z-index: -2;
 }
+
+body.light-mode .skills-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(255, 180, 0, 0.15);
+}
