@@ -373,7 +373,7 @@ body.light-mode .project-tech span {
     .scroll-top-btn {
         width: 48px;
         height: 48px;
-        font-size: 18px;
+        font-size: 22px;
         bottom: 20px;
         right: 20px;
     }
@@ -588,4 +588,33 @@ body.light-mode {
 
 .scroll-top-btn:hover {
   transform: translateY(-4px) scale(1.08);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    #0f172a,
+    #1e293b,
+    #0f172a
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 18s ease infinite;
+  z-index: -2;
+  opacity: 0.6;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#bg-animation {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
 }

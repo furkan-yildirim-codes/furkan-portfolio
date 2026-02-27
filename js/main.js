@@ -110,3 +110,18 @@ scrollTopBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+tsParticles.load("bg-animation", {
+  particles: {
+    number: { value: 40 },
+    size: { value: 2 },
+    move: {
+      speed: 0.8
+    },
+    opacity: { value: 0.3 },
+    color: { value: "#3b82f6" }
+  },
+  background: {
+    color: "transparent"
+  }
+});
