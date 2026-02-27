@@ -629,4 +629,5 @@ body.light-mode::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
+  transition: opacity 0.4s ease;
 }

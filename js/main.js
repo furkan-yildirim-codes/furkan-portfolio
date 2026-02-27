@@ -154,9 +154,9 @@ const bgContainer = document.getElementById("bg-animation");
 
 function updateParticlesVisibility() {
   if (document.body.classList.contains("light-mode")) {
-    bgContainer.style.display = "none";
+    bgContainer.style.opacity = "0";
   } else {
-    bgContainer.style.display = "block";
+    bgContainer.style.opacity = "1";
   }
 }
 
