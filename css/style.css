@@ -420,6 +420,28 @@ body.light-mode .project-tech span {
     display: block;
 }
 
+.project-image.project-fit-frame {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 12px;
+}
+
+.project-image.project-fit-frame .terminal-bar {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+.project-image img.project-fit-image {
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
 .project-image.project-logo-frame {
     width: 100%;
     margin-left: auto;
@@ -440,6 +462,10 @@ body.light-mode .project-tech span {
         inset 0 0 0 1px rgba(59,130,246,0.15),
         inset 0 -40px 60px rgba(15, 23, 42, 0.45),
         0 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+.project-image.project-logo-extended {
+    min-height: 210px;
 }
 
 .project-image.project-logo-bg .terminal-bar {
